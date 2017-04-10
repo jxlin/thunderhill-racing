@@ -45,4 +45,28 @@ In the Client Node, there are three distictive parallel threads:
 
 ## Python Trainer:
 
-Divided into two categories
+As it turns out, in order for the in place python trainer to re-train the model with a different learning rate, you need to create a seperate model.json and model.h5 weight file.  Otherwise, any retraining will only use the original optimizer and learning rate compiled into the h5 model and weight combo file.  The way to do this is to use the new script `modelh52json.py`.  Below is an example execution.
+
+```
+python modelh52json.py psyncPosNet.h5 modelTrained.json
+```
+
+After the model has been retrained, you can move it back into a model and weight combo h5 by using the `modeljson2h5.py` script.  Below is an example execution.
+
+```
+python modeljson2h5.py modelTrained.json psyncPosNet-retrained.h5
+```
+
+To run:
+
+1. in MainNode folder:
+```
+cmake .
+make
+```
+2. in SmallController folder:
+```
+python clientnode.py
+```
+3. start session in PS studio
+
