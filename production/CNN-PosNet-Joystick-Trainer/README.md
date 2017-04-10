@@ -1,6 +1,6 @@
 ### Joystick commander and Agile trainer with Polysync Main Node
 
-The work done in this section is based heavily on work done from John Chen on the behavioral cloning project from the Self-Driving Car Nano degree: [John's Agile Trainer](https://github.com/diyjac/AgileTrainer)
+The work done in this section is based heavily on work done from John Chen on the behavioral cloning project from the Self-Driving Car Nano degree: [John's Agile Trainer](https://github.com/diyjac/AgileTrainer).  A relevent discussion of this method and a simpler model that works in the Udacity Simulator can be found in here: [Dean's NVIDIA model trained using Agile](https://github.com/teamsoulless/thunderhill/tree/master/models/aerogeekdean_diyjac).
 
 ## Communicating with Polysync and the Kia Soul:
 
