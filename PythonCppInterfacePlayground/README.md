@@ -1,6 +1,6 @@
 # PythonCppInterfacePlayground
 
-An Initial Proof-of-concept Python wrapper for Polysync Core.  This is work in progress.  I am not sure yet how the images should be exposed in the python layer.  Please feel free to explore and test this example.
+An Initial Proof-of-concept Python wrapper for Polysync Core.  This is work in progress.  We discovered a better way to access the images using shared memory.  You may look at some sample code and access methods here [sharedmem_image_data_viewer](../sharedmem_image_data_viewer).  Please feel free to explore and test this example.
 
 ## Installation
 
